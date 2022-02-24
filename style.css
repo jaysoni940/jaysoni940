@@ -67,9 +67,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: rgb(0, 0, 0);
+  color: #fff;
   text-align: left;
-  background-color: #00ff66;
+  background-color: #141b29;
   /* letter-spacing: 0.2rem; */
 }
 
@@ -380,7 +380,7 @@ h6,
     "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
-  color: #05386b;
+  color: #fff;
 }
 
 h1,
@@ -4664,12 +4664,14 @@ input[type="button"].btn-block {
   color: rgb(0, 0, 0);
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: #05386b;
+  color: #fff;
 }
+
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
-  color: #10ca64;
+  color: #ffac30;
+  /* background-color: #ffac30; */
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
@@ -10652,7 +10654,7 @@ section.resume-section .resume-section-content {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: #05386b;
+  background-color: #141b29;
   height: 0.25rem;
   border-radius: 0.5rem;
   z-index: -10;
@@ -10708,7 +10710,7 @@ section.resume-section .resume-section-content {
 }
 .card .text {
   padding: 10px 20px 20px;
-  /* color: rgb(0, 0, 0); */
+  color: #141b29;
   background-color: rgba(211, 221, 215, 0.5);
   /* border: 5px solid #d3ddd7; */
   border-right: 10px solid #fff;
