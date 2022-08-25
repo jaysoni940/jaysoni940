@@ -1,14 +1,23 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800;900&display=swap');
 body {
   scroll-behavior: smooth;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   font-size: 1rem;
-  font-weight: 400;
   line-height: 1.5;
-  color: #fff;
+  color: #000;
   text-align: left;
-  background-color: #141b29;
+}
+
+h1.name, .resume-section-content>h2  {
+  font-size: 70px;
+  font-weight: 800;
+  background: #121FCF;
+  background: repeating-radial-gradient(circle farthest-corner at center center, #121FCF 0%, #CF1512 100%);
+  /* background: linear-gradient(to right, #121FCF 0%,  #CF1512 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 
 .social-icons .social-icon {
@@ -18,9 +27,8 @@ body {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #10ca64;
+  background-color: #020002;
   color: #fff;
-  border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -44,11 +52,13 @@ section.resume-section {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  /* padding-top: 5rem;
+  padding-bottom: 5rem; */
 }
 section.resume-section .resume-section-content {
   width: 100%;
+  min-height: 100vh;
+  margin: 0;
 }
 
 
@@ -146,7 +156,6 @@ section.resume-section .resume-section-content {
 }
 .card .text {
   padding: 10px 20px 20px;
-  color: #141b29;
   background-color: rgba(211, 221, 215, 0.5);
   /* border: 5px solid #d3ddd7; */
   border-right: 10px solid #fff;
@@ -218,9 +227,6 @@ section.resume-section .resume-section-content {
 
 /*Contactme text*/
 .contactme {
-  font-size: 1.3rem;
-  font-family: "Arvo", sans-serif;
-  font-weight: 500;
   text-align: justify;
 }
 
@@ -441,7 +447,7 @@ section.resume-section .resume-section-content {
 .hvr-sweep-to-right:hover,
 .hvr-sweep-to-right:focus,
 .hvr-sweep-to-right:active {
-  color: #1d1919;
+  color: #000;
 }
 .hvr-sweep-to-right:hover:before,
 .hvr-sweep-to-right:focus:before,
@@ -452,16 +458,15 @@ section.resume-section .resume-section-content {
 /* Sweep To Right from Hover.css End*/
 
 .about_intro {
-  color: #ffffff;
+  color: #000;
   letter-spacing: 1px;
   font-size: 20px;
-  font-family: "Arvo";
   width: 90%;
 }
 .wordcarousel {
   /* font-size: 36px; */
   /* font-weight: 500; */
-  color: #fff;
+  color: #000;
 }
 .flip {
   overflow: hidden;
@@ -477,11 +482,8 @@ section.resume-section .resume-section-content {
 ul.flip4 {
   list-style: none;
   padding-inline-start: 0;
-  color: #32dd7f;
 }
 .swipe {
-  font-family: "Arvo";
-  color: #32dd7f;
   /* font-size: 50px; */
   font-weight: 800;
   padding: 0 0px;
