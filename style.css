@@ -7,14 +7,37 @@ body {
   line-height: 1.5;
   color: #000;
   text-align: left;
+  text-decoration: none;
 }
-
+section.resume-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+section.resume-section .resume-section-content {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+}
+.hello{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+h1.name{
+  font-size: 8vw;
+}
+.resume-section-content>h2{
+  font-size: 50px;
+}
 h1.name, .resume-section-content>h2  {
-  font-size: 70px;
+  /* font-size: 70px; */
   font-weight: 800;
   background: #121FCF;
   background: repeating-radial-gradient(circle farthest-corner at center center, #121FCF 0%, #CF1512 100%);
-  /* background: linear-gradient(to right, #121FCF 0%,  #CF1512 100%); */
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
@@ -27,17 +50,20 @@ h1.name, .resume-section-content>h2  {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #020002;
-  color: #fff;
-  font-size: 1.5rem;
+  background: #121FCF;
+  background: repeating-radial-gradient(circle farthest-corner at center center, #CF1512 0%, #121FCF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
   margin-right: 1.5rem;
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #05386b;
-  color: #fff;
+  transform: translateY(-10px);
+  transition: 0.5s;
 }
 
 .dev-icons {
@@ -46,21 +72,6 @@ h1.name, .resume-section-content>h2  {
 .dev-icons>li{
   margin: 20px;
 }
-
-section.resume-section {
-  display: flex;
-  align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  /* padding-top: 5rem;
-  padding-bottom: 5rem; */
-}
-section.resume-section .resume-section-content {
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-}
-
 
 /* ===== SKILLS =====*/
 .skills__container {
@@ -75,7 +86,7 @@ section.resume-section .resume-section-content {
 }
 .skills__data {
   color: #000;
-  background-color: #8ee4af;
+  background-color: #ffe100;
   border: #ffffff solid 1px;
   display: flex;
   justify-content: space-between;
@@ -131,15 +142,13 @@ section.resume-section .resume-section-content {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
 }
 .card {
-  flex: 0 0 300px;
+  flex: 0 0 250px;
   margin: 10px;
   border: 1px solid #ffffff;
   box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.3);
   background-color: #fff;
-  /* background-color: #ffffff; */
   margin: 20px;
 }
 .card #cf {
@@ -174,7 +183,7 @@ section.resume-section .resume-section-content {
   /* top: 50px; */
   /* box-shadow: 4px 10px 16px 0px rgba(0, 0, 0, 0.3); */
   height: 220px;
-  width: 297px;
+  width: 247px;
   align-self: center;
   position: absolute;
   left: 0;
