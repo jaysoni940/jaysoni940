@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800;900&display=swap");
 body {
   scroll-behavior: smooth; 
-  text-align: justify !important;
+  /* text-align: justify !important; */
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif !important;
@@ -49,20 +49,14 @@ span.menu-item:hover {
 section.resume-section {
   display: flex;
   align-items: center;
-  /* padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem; */
+
 }
 section.resume-section {
-  width: 100%;
+  /* width: 100%; */
   min-height: 100vh;
   margin: auto;
 }
-/* .hello {
-  padding-top: 10%;
-  padding-bottom: 10%;
-} */
+
 h1.name {
   font-size: 8vw;
 }
@@ -112,10 +106,10 @@ h1.name,
 }
 
 .dev-icons {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .dev-icons > li {
-  margin: 20px;
+  margin: 40px;
 }
 
 /*Profect cards*/
@@ -341,4 +335,92 @@ ul.flip4 {
   80% {
     margin-top: -270px;
   }
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+.header {
+  text-align: center;
+  line-height: 0.8;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.header p {
+  margin: 0 auto;
+  line-height: 2;
+  color:  hsl(228, 45%, 44%);
+}
+
+
+.box p {
+  color:  hsl(228, 45%, 44%);
+}
+
+.box {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px  hsl(228, 100%, 90%);
+  padding: 30px;
+  margin: 20px;  
+}
+
+img.projec-img  {
+  float: right !important;
+}
+
+@media (max-width: 450px) {
+  .box {
+      height: 200px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .box {
+      text-align: center;
+      height: 180px;
+  }
+}
+
+.cyan {
+  border-top: 3px solid rgb(170, 0, 255);
+}
+.red {
+  border-top: 3px solid red;
+}
+.blue {
+  border-top: 3px solid rgb(0, 4, 255);
+}
+.orange {
+  border-top: 3px solid greenyellow;
+}
+
+@media (min-width: 950px) {
+  .row1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .row2-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .box-down {
+      position: relative;
+      top: 150px;
+  }
+  .box {
+      width: 30%;
+   
+  }
+  .header p {
+      width: 30%;
+  }
+  
 }
