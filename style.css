@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800;900&display=swap");
 body {
   scroll-behavior: smooth; 
-  /* text-align: justify !important; */
+  text-align: justify !important;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif !important;
   font-size: 1rem;
   line-height: 1.5;
-  color: #000;
   text-align: left;
   text-decoration: none;
-
 }
-
+.dark{
+  background-color: #1B2430;
+  color: #ffffff !important;
+}
 /* SideMenu */
 
 img.img-profile{
@@ -68,16 +69,40 @@ h1.name,
   /* font-size: 70px; */
   font-weight: 800;
   background: #121fcf;
-  background: repeating-radial-gradient(
-    circle farthest-corner at center center,
-    #121fcf 0%,
-    #cf1512 100%
+  background:linear-gradient(
+    to right,
+    rgba(255, 0, 0, 1),
+    rgb(89, 0, 255),
+    rgb(0, 255, 255)
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+button.download{
+  /* border: none; */
+  padding: 2px 10px;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #fff;
+  border:none;
+  background: 
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 200ms;
 
+}
+button.download:hover{
+  background-size: 0 3px, 100% 3px;
+}
 .social-icons .social-icon {
   /* margin-bottom: 20px; */
   display: inline-flex;
@@ -85,24 +110,24 @@ h1.name,
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background: #121fcf;
-  background: repeating-radial-gradient(
-    circle farthest-corner at center center,
-    #cf1512 0%,
-    #121fcf 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: #121fcf; */
+  color: #fff;
   font-size: 2.5rem;
   margin-right: 1rem;
+
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  transform: translateY(-10px);
-  transition: 0.5s;
+  background: linear-gradient(
+    #ff0400 0%,
+    hsl(224, 100%, 50%) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .dev-icons {
@@ -112,113 +137,6 @@ h1.name,
   margin: 40px;
 }
 
-/*Profect cards*/
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-}
-.card {
-  flex: 0 0 250px;
-  margin: 10px;
-  border: 1px solid #ffffff;
-  box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.3);
-  background-color: #fff;
-  margin: 20px;
-}
-.card #cf {
-  max-width: 100%;
-  /* filter: contrast(80%); */
-  /* filter: brightness(90%); */
-}
-
-#cf:hover {
-  filter: contrast(100%);
-  filter: brightness(100%);
-
-  transition: filter 0.4s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-}
-.card .text {
-  padding: 10px 20px 20px;
-  background-color: rgba(211, 221, 215, 0.5);
-  /* border: 5px solid #d3ddd7; */
-  border-right: 10px solid #fff;
-  border-left: 10px solid #fff;
-}
-
-#cf {
-  position: relative;
-  height: 220px;
-  width: 297px;
-  margin: 0 auto;
-  align-items: center;
-  align-content: center;
-}
-#cf img {
-  /* top: 50px; */
-  /* box-shadow: 4px 10px 16px 0px rgba(0, 0, 0, 0.3); */
-  height: 220px;
-  width: 247px;
-  align-self: center;
-  position: absolute;
-  left: 0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  border-bottom: #fff 3px solid;
-}
-
-#cf img {
-  animation-name: cfFadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 12s;
-  animation-direction: alternate;
-}
-#cf img:nth-of-type(1) {
-  animation-delay: 8s;
-}
-#cf img:nth-of-type(2) {
-  animation-delay: 4s;
-}
-#cf img:nth-of-type(3) {
-  animation-delay: 0s;
-}
-/* #cf img:nth-of-type(4) {
-  animation-delay: 2s;
-}
-#cf img:nth-of-type(5) {
-  animation-delay: 0s;
-} */
-@keyframes cfFadeInOut {
-  0% {
-    opacity: 1;
-  }
-  16.7% {
-    opacity: 1;
-  }
-  33.3333333333% {
-    opacity: 0;
-  }
-  83.3333333333% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.about_intro {
-  color: #000;
-  letter-spacing: 1px;
-  font-size: 20px;
-  width: 90%;
-}
-.wordcarousel {
-  /* font-size: 36px; */
-  /* font-weight: 500; */
-  color: #000;
-}
 .flip {
   overflow: hidden;
   position: relative;
@@ -357,11 +275,6 @@ ul.flip4 {
   color:  hsl(228, 45%, 44%);
 }
 
-
-.box p {
-  color:  hsl(228, 45%, 44%);
-}
-
 .box {
   border-radius: 5px;
   box-shadow: 0px 30px 40px -20px  hsl(228, 100%, 90%);
@@ -393,7 +306,7 @@ img.projec-img  {
   border-top: 3px solid red;
 }
 .blue {
-  border-top: 3px solid rgb(0, 4, 255);
+  border-top: 3px solid rgb(0, 170, 255);
 }
 .orange {
   border-top: 3px solid greenyellow;
