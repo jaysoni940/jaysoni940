@@ -1,12 +1,4 @@
-$(".theme").on("click",function(){
-  if( $( "body" ).hasClass( "dark" )) {
-    $( "body" ).removeClass( "dark" );
-    $( ".theme" ).text( "OFF" );
-} else {
-    $( "body" ).addClass( "dark" );
-    $( ".theme" ).text( "ON" );
-}
-})
+
 // ScrollReveal.js implementation
 
 const sr = ScrollReveal({
@@ -52,3 +44,16 @@ sr.reveal('.interests2',{delay:400});
 // sr.reveal('.connect',{}); 
 sr.reveal('.connect1',{delay:200}); 
 sr.reveal('.connect2',{delay:400}); 
+
+
+//dark
+
+// $(".theme").on("click",function(){
+//     if( $( "body" ).hasClass( "dark" )) {
+//       $( "body" ).removeClass( "dark" );
+//       $( ".theme" ).text( "OFF" );
+//   } else {
+//       $( "body" ).addClass( "dark" );
+//       $( ".theme" ).text( "ON" );
+//   }
+//   })
