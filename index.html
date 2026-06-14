@@ -1,633 +1,904 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta property="og:title" content="Jay Soni" />
-    <meta property="og:image" content="img/portfolio.png" />
-    <meta
-      property="og:url"
-      content="https://jaysoni940.github.io/jaysoni940/"
-    />
-    <title>Jay Soni</title>
-    <!-- <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay Soni — Full Stack Developer</title>
 
-    <!-- CSS file includes Bootstrap -->
-    <link href="style.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
+  <!-- SEO -->
+  <meta name="description" content="Jay Soni is a Full Stack Developer specializing in .NET, Azure, React, and modern web technologies. MS Computer Science from UT Dallas.">
+  <meta name="keywords" content="Jay Soni, Full Stack Developer, .NET Developer, Azure, React, Software Engineer, UT Dallas, ISN Software">
+  <meta name="author" content="Jay Soni">
 
-  </head>
-  <body id="page-top">
-      <div class="row flex-nowrap mw-100 mw-sm-100">
-        <!-- NAV start -->
-        <div class="col-auto col-lg-3 col-xl-2 bg-dark " style="padding-right: 0 !important;">
-          <div class="d-flex flex-column align-items-center text-white sticky-top">
-            <a class="d-flex align-items-center py-4 mb-md-0 text-white  align-items-sm-start text-decoration-none">
-              <b><span class="mt-5 fs-5 d-none d-sm-inline">JAY SONI</span></b>
-            </a>
-            <span class="d-none d-lg-block">
-              <img
-              class="img-fluid img-profile mb-5"
-              src="img/photo.jpg"
-              height="150px"
-              width="150px"
-              alt="Profile Picture"
-              />
-          </span>
-            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start p-3" id="menu">
-              <li class="nav-item">
-                <a href="#about" class="nav-link align-middle px-0">
-                  <img class="ml-2" src="./img/person.png" height="30px" width="30px" alt="" srcset="">
-                  <span class=" d-none d-sm-inline menu-item m-2">About</span>
-                </a>
-              </li>
-              <li>
-                <a href="#education" class="nav-link px-0 align-middle">
-                  <img src="./img/education.png" height="30px" width="30px" alt="" srcset="">
-                  <span class="d-none d-sm-inline menu-item m-2">Education</span>
-                </a>
-              </li>
-              <li>
-                <a href="#experience" class="nav-link px-0 align-middle">
-                  <img src="./img/experience.png" height="30px" width="30px" alt="" srcset="">
-                  <span class=" d-none d-sm-inline menu-item m-2">Experience</span>
-                  </a>
-              </li>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jay Soni — Full Stack Developer">
+  <meta property="og:description" content="Full Stack Developer specializing in .NET, Azure, and React. Building impactful software products used by 75,000+ users.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jaysoni940.github.io/jaysoni940/">
+  <meta property="og:image" content="img/photo.jpg">
 
-              <li>
-                <a href="#skills" class="nav-link px-0 align-middle">
-                  <img src="./img/skills.png" height="30px" width="30px" alt="" srcset="">
-                  <span class=" d-none d-sm-inline menu-item m-2">Skills</span>
-                </a>
-              </li>
-              <li>
-                <a href="#projects" class="nav-link px-0 align-middle">
-                  <img src="./img/project.png" height="30px" width="30px" alt="" srcset="">
-                  <span class=" d-none d-sm-inline menu-item m-2">Projects</span>
-                </a>
-              </li>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@jvsoni94090">
+  <meta name="twitter:title" content="Jay Soni — Full Stack Developer">
+  <meta name="twitter:description" content="Full Stack Developer specializing in .NET, Azure, and React.">
+  <meta name="twitter:image" content="img/photo.jpg">
 
-              <!-- <li>
-                <a href="#interests" class="nav-link px-0 align-middle">
-                  <img src="./img/game.png" height="30px" width="30px" alt="" srcset="">
-                  <span class=" d-none d-sm-inline menu-item m-2">Interests</span>
-                </a>
-              </li> -->
-              <li>
-                <a href="#interests" class="nav-link px-0 align-middle">
-                  <img src="./img/connect1.png" height="30px" width="30px" alt="" srcset="">
-                  <span class=" d-none d-sm-inline menu-item m-2">Connect </span>                
-                </a>
-              </li>
-              <!-- <li>
-                  <button class="theme">OFF</button>
-                  <span class=" d-none d-sm-inline menu-item m-2">Dark Theme</span>
+  <!-- SEO extras -->
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jaysoni940.github.io/jaysoni940/">
 
-              </li> -->
-            </ul>
-            <hr />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/photo.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Jay Soni - Home">
+        <span class="logo-badge">JS</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education"  class="nav-link">Education</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="Resume Jay Virendra Soni.pdf" download class="btn btn-primary btn-sm">
+          <i class="fas fa-download"></i>
+          <span>Resume</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <!-- <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for new opportunities
+        </div> -->
+
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Jay Soni</span>
+        </h1>
+
+        <div class="hero-title-line">
+          <span class="hero-title-prefix">I'm a </span>
+          <span class="typed-text" id="typedText" aria-live="polite"></span><span class="cursor-blink" aria-hidden="true">|</span>
+        </div>
+
+        <p class="hero-description">
+          Full Stack Developer passionate about building scalable web applications and innovative digital products.
+          MS Computer Science from <strong>UT Dallas</strong> · AZ-900 Certified ·
+          Built products used by <strong>75,000+ users</strong> at ISN Software Corporation.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://github.com/jaysoni940" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fab fa-github"></i>
+            View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i>
+            Get In Touch
+          </a>
+        </div>
+
+        <div class="hero-social">
+          <a href="https://www.linkedin.com/in/jaysoni940/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/jaysoni940" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/jvsoni94090" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter profile">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="mailto:jvsoni94090@gmail.com" class="social-link" aria-label="Email Jay Soni">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+
+        <div class="hero-stats" aria-label="Quick stats">
+          <div class="stat-item">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <!-- <div class="stat-item">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Projects</span>
+          </div> -->
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-number">75K+</span>
+            <span class="stat-label">Users Impacted</span>
           </div>
         </div>
-        <!-- NAV end -->
-        <div class="col-sm-10 col-xl-10 col-md-9 col-lg-9" style="padding-right: 0 !important;">
- 
-          <!-- Page Content-->
-            <!-- About-->
-            <section class="resume-section about px-xl-5" id="about">
-              <div class="resume-section-content">
-                <div class="pt-5 about_name row">
-                  <div class="col-lg-7 col-xl-7 col-md-12 col-sm-12 hello">
-                    <h2><b>Hello, it's me!</b><br /></h2>
-                    <h1 class="name">Jay Soni.</h1>
-                    <div class="flip">
-                      <h2>
-                        <ul class="flip4">
-                          <li class="swipe">{ CSE Student }</li>
-                          <li class="swipe">{ Software Dev. }</li>
-                          <li class="swipe">{ Full Stack Dev. }</li>
-                        </ul>
-                      </h2>
-                    </div>
-                  </div>
-                  <div class="col-lg-5 col-xl-5 col-sm-12 col-md-12 px-3">
-                    <div class="text-justify">
-                      A software developer passionate about programming and web development. Well, about me, I love developing products: it's kind of building amazing things just using a text editor.
-                      <br /><br />
-                      I did my MS in Computer Science at University of Texas at Dallas, USA. I am working as an Advanced Associate Software Developer at ISN Software Corporation. I am into full stack development since last 3 years.
-                      <br /><br />
-                    </div>
-                    <a href="./Resume Jay Virendra Soni.pdf" download><button class="mb-4 download"><i class="bi-download" style="margin-right:10px;"></i>Download CV</button></a>
-
-                    <div class="social-icons mb-5">
-                      <a
-                        class="social-icon"
-                        href="https://www.linkedin.com/in/jaysoni940/"
-                        >
-                        <i class="bi-linkedin"></i>
-                      </a>
-                      <a
-                        class="social-icon"
-                        href="https://github.com/jaysoni940"
-                        >
-                        <i class="bi-github"></i>
-                      </a>
-                      <a
-                        class="social-icon"
-                        href="https://twitter.com/jvsoni94090"
-                        >
-                        <i class="bi-twitter"></i>
-                    </a>
-                      <a
-                        class="social-icon"
-                        href="mailto: jvsoni94090@gmail.com"
-                        alt="jvsoni94090@gmail.com"
-                        >
-                        <i class="bi-google"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-            </section>
-
-            <!-- Education-->
-            <section
-              class="resume-section px-xl-5 px-lg-2 row"
-              id="education">
-              <div class="resume-section-content">
-                <h2 class="mb-5 education">
-                  <img src="./img/education.png" height="50px" width="50px" alt="" srcset="">
-                  EDUCATION </h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-                  <div class="flex-grow-1 education">
-                    <div class="mb-3">
-                      <h3 class="">
-                        University of Texas at Dallas
-                      </h3>
-                      Master of Science : Computer Science : GPA: 3.6/4.0
-                      <br />
-                      <!-- <a href="#" style="color: green"> TRANSCRIPT 📝</a> -->
-                      <br>
-                      <b>Coursework:</b> Design and Analysis of Computer Algorithms, Database Design, Advanced Operating Systems, Compiler Design, 
-                      Advanced Computer Networks, Adv. Telecommunication Networks, Object Oriented Design and Analysis, Artificial Intelligence  
-                    </div>
-                  </div>
-                  <div class="flex-shrink-0 education">
-                    <span class="mb-3">August 2021 - May 2023</span><br>
-                    <span class=""> TX, United States</span>
-                  </div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-                  <div class="flex-grow-1 education">
-                    <div class="mb-3">
-                      <h3 class="">Gujarat Technological University
-                      </h3>
-                      Bachelor of Engineering : Computer Engineering : GPA:
-                      9.51/10
-                      <br />
-                      <!-- <a href="#" style="color: green"> TRANSCRIPT 📝</a> -->
-                      <br>
-                      <b>Coursework:</b> Data Structures and Algorithms, Discrete Mathematics, Advanced Java Programming, Object Oriented Programming,
-                      Software Engineering, Computer Architecture, Web Technologies, Computer Networks, Microprocessors and Interface, DBMS, Python.
-                    </div>
-                  </div>
-                  <div class="flex-shrink-0 education">
-                    <span class="">August 2017 - June 2021</span><br>
-                    <span class=""> GJ, India</span>
-                  </div>
-                </div>
-                <!-- <div class="d-flex flex-column flex-md-row justify-content-between mb-4 education">
-                  <div class="flex-grow-1 education">
-                    <h3 class="mb-2">Bright School </h3>
-                    <div class="subheading mb-3">HSC : 87% <br>SSC : 82%</div>
-                    <div class="subheading mb-3"></div>
-                  </div>
-                  <div class="flex-shrink-0">
-                    <span class="">June 2014 - May 2017</span>
-                    <span class="">GJ, India</span>
-                  </div>
-                </div> -->
-              </div>
-            </section>
-
-            <!-- Experience-->
-            <section class="resume-section  px-xl-5 row" id="experience">
-              <div class="resume-section-content">
-                <h2 class="mb-5 experience"> 
-                  <img src="./img/experience.png" height="50px" width="50px" alt="" srcset="">
-                  EXPERIENCE
-                </h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between exp_2">
-                  <div class="flex-grow-1">
-                    <h3 class="mb-0">Advanced Associate Software Developer</h3>
-                    <div class="mb-2">
-                     <i><b>ISN Software Corporation</b></i>
-                    </div>
-                    <p class="">
-                      Developed, tested, and deployed web applications using the Microsoft .NET framework and Azure services.</br>
-                      Conducted code reviews to ensure adherence to coding standards and best practices.</br>
-                      Diagnosed and resolved bugs, performance issues, and other technical problems in a timely manner.                      
-                    </p>
-                  </div>
-                  <div class="flex-shrink-0">
-                    <span class="ml-5">
-                      June 2022 - Aug 2022
-                      <br />
-                      <p class="ml-5 float-left">Dallas, TX, USA</p>
-                    </span>
-                  </div>
-                </div>
-                <div class="d-flex flex-column flex-md-row  justify-content-between exp_2">
-                  <div class="flex-grow-1">
-                    <h3 class="mb-0">IT Support Assistant</h3>
-                    <div class="mb-2">
-                      <i><b>UT System, UT Dallas</i></b>
-                    </div>
-                    <p class="">
-                      Assisting the Office of Shared Information Services of University of Texas System at UTD with PeopleSoft FMS
-                    </p>
-                  </div>
-                  <div class="flex-shrink-0">
-                    <span class="ml-5">
-                      Aug 2022 - May 2023
-                      <br />
-                      <p class="ml-5 float-left">Dallas, TX, USA</p>
-                    </span>
-                  </div>
-                </div>                
-                <div class="d-flex flex-column flex-md-row justify-content-between exp_2">
-                  <div class="flex-grow-1">
-                    <h3 class="mb-0">Software Developer Intern</h3>
-                    <div class="mb-2">
-                     <i><b>ISN Software Corporation</b></i>
-                    </div>
-                    <p class="">
-                      Worked on Microsoft Azure web services and .NET based development with EF Core, Razor pages and MS-SQL.<br />
-                      Developing business products over 2 months period used by approximately 75k users.<br />
-                      Participated in daily stand-ups, sprint plannings and presented the project to the Senior Leadership
-                    </p>
-                  </div>
-                  <div class="flex-shrink-0">
-                    <span class="ml-5">
-                      June 2022 - Aug 2022
-                      <br />
-                      <p class="ml-5 float-left">Dallas, TX, USA</p>
-                    </span>
-                  </div>
-                </div>
-                <!-- <div class="d-flex flex-column flex-md-row justify-content-between exp_1" >
-                  <div class="flex-grow-1">
-                    <h3 class="mb-0">Web Developer Intern</h3>
-                    <div class="mb-2">
-                      <i><b>Shree Kamdhenu Electronics Pvt. Ltd.</b></i>
-                    </div>
-                    <p class="">
-                      Implemented rich user experiences by creating 20+ new features utilizing HTML/CSS/JS/PHP. <br />
-                      Managed, optimized, and updated PHP databases as required.
-                    </p>
-                  </div>
-                  <div class="flex-shrink-0">
-                    <span class="ml-5">
-                      May 2020 - Oct 2020
-                      <br />
-                      <p class="ml-5 float-left">GJ, India</p>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between  exp_2">
-                  <div class="flex-grow-1">
-                    <h3 class="mb-0">Full Stack Developer Intern</h3>
-                    <div class="mb-2">
-                      <i><b>Posimyth Innovations</b></i>
-                    </div>
-                    <p class="">
-                      Implemented projects using different stacks and different
-                      web frameworks.<br />
-                      Managed time-sensitive updates, including content changes
-                      and database upgrades.<br />
-                    </p>
-                  </div>
-                  <div class="flex-shrink-0">
-                    <span class="ml-5">
-                      Sept 2019 - Feb 2020
-                      <br />
-                      <p class="ml-5 float-left">GJ, India</p>
-                    </span>
-                  </div>
-                </div> -->
-              </div>
-            </section>
-
-
-            <!--project-->
-            <section class="resume-section px-xl-5" id="projects">
-            <div class="resume-section-content">
-              <h2 class="mb-5 projects">
-                <img src="./img/project.png" height="50px" width="50px" alt="" srcset="">
-                MAJOR PROJECTS
-                <a href="https://github.com/jaysoni940">
-                </a>
-              </h2>
-
-              <div class="row1-container">
-                <div class="box box-down cyan">
-                  <h3>Vogue My Space</h3>
-                  <p>A complete e-commerce Android app which uses Augmented Reality to see 3D furnitures before buying.</p>
-                  <img class="projec-img" src="img/github.png" height="50px" width="50px" alt="">
-                </div>
-            
-                <div class="box red">
-                  <h3>Clinic Appointment System</h3>
-                  <p>A website that allows doctors and patient a better way to manage the clinic.</p>
-                  <a href="https://github.com/jaysoni940/Clinic-Appointment-Website">
-                    <img class="projec-img" src="img/github.png" height="50px" width="50px" alt="">
-                  </a>
-                </div>
-            
-                <div class="box box-down blue">
-                  <h3>Share My Ride</h3>
-                  <p>A web application where people can find carpools which help in better transportaion and is more economical.</p>
-                  <a href="https://github.com/jaysoni940/ShareMyRide--Carpool-finder">
-                    <img class="projec-img" src="img/github.png" height="50px" width="50px" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="row2-container">
-                <div class="box orange">
-                  <h3>DART DBMS</h3>
-                  <p> robust db to store, manipulate and search several entities by designing an ER Model and translating
-                    it to relational schema.</p>
-                    <a href="https://github.com/jaysoni940/DART-Database-Management">
-                      <img class="projec-img" src="img/github.png" height="50px" width="50px" alt="">
-                    </a>
-                </div>
-              </div>
-            </div>
-            </section>
-
-            
-            <!-- Skills-->
-            <section class="resume-section px-xl-5" id="skills">
-              <div class="resume-section-content">
-                <h2 class="skills mb-3">
-                  <img src="./img/skills.png" height="60px" width="60px" alt="" srcset="">
-                  SKILLS </h2>
-                <div class="row mt-2">
-                  <div class="col-md-6">
-                    <div class="mb-3 skill-4">
-                      <center>
-                        <b>TOOLS AND FRAMEWORKS</b>
-                      </center>
-                    </div>
-    
-                      <ul class="list-inline dev-icons">
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/html.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/css.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/bootstrap.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/javascript.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/jquery.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <!-- <li class="list-inline-item skill-3">
-                          <img src="./img/node-js.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/angularjs.png" height="80px" width="80px" alt="" srcset="">
-                        </li> 
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/react.png" height="80px" width="80px" alt="" srcset="">
-                        </li> -->
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/php.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/net.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/efCore.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/csharp.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/python.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/java.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/unity.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/figma.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/git.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/github.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/azure.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/azure-devops.png" height="80px" width="80px" alt="" srcset="">
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <img src="./img/sql.png" height="80px" width="80px" alt="" srcset="">
-                        </li>  
-                      </ul>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3 skill-4">
-                      <center>
-                        
-                        <b>CERTIFICATIONS</b>
-                        <br>
-                        <img class="my-5" src="./img/az900.png" height="200px" width="200px" alt="" srcset=""><br>
-                        <p>Microsoft Azure Fundamentals AZ-900 Certified</p><br>
-                        <b><a href="https://www.linkedin.com/in/jaysoni940/details/certifications/" style="color: #fff;">
-                          OTHER CERTIFICATIONS
-                        </a></b>
-                      </center>
-                    </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- Interests-->
-            <section
-              class="resume-section px-xl-5 interests"
-              id="interests"
-              style="margin-top: -2px"
-            >
-              <div class="resume-section-content">
-                <h2 class="mb-5">
-                  <img src="./img/game.png" height="60px" width="60px" alt="" srcset="">
-                  INTERESTS </h2>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <p class="contactme mb-4 interests2">
-                      I spend a large amount of my free time exploring 🧐 the
-                      latest technology advancements in the web development
-                      world . I keep on working on different projects based on
-                      various frameworks. I am an avid learner and it is this
-                      love for programming 💻, combined with my desire to dig
-                      deeper into the working of various applications and
-                      technologies...
-                    </p>
-
-                  </div>
-
-                  <div class="col-sm-6">
-                      <ul class="list-inline">
-                        <li class="list-inline-item skill-3">
-                          <iframe src="https://giphy.com/embed/xThuWu82QD3pj4wvEQ" width="150px" height="150px" ></iframe>
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <iframe src="https://giphy.com/embed/ovLuqYhDyldARSN3Uy" width="150px" height="150px"></iframe>        
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <iframe src="https://giphy.com/embed/3ohhwJ7G4rMrgTZqCs" width="150px" height="150px" ></iframe>
-                        </li>
-
-                      </ul>        
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <p class="contactme interests1">
-                      Apart from being a computer engineer, there are many things
-                      I have been doing in my day to day life. I also like talking
-                      about politics, listening to music,
-                      playing videogames, and cooking. Gaming is my all
-                      time stress buster . The virtual gaming world becomes "my
-                      world" at that time. "I play games not because I don't have
-                      a life, but because I choose to have many."😎
-                    </p>
-                  </div>
-
-                  <div class="col-sm-6">
-                      <ul class="list-inline">
-
-                        <li class="list-inline-item skill-3">
-                          <iframe src="https://giphy.com/embed/m98YKHIfc280xZA8q3" width="150px" height="150px"></iframe>
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <iframe src="https://giphy.com/embed/KtqsBty4oAlBwfp5YI" width="150px" height="150px" ></iframe>
-                        </li>
-                        <li class="list-inline-item skill-3">
-                          <iframe src="https://giphy.com/embed/VRRpUVqNVLbx0X1gVz" width="150px" height="150px" ></iframe>
-                        </li>
-                      </ul>        
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- Connect-->
-            <section class="resume-section px-xl-5 connect"
-              id="connect" >
-              <div class="resume-section-content row">
-                <h2 class="mb-5">
-                  <img src="./img/connect1.png" height="60px" width="60px" alt="" srcset="">
-                  Let's CONNECT 
-                </h2>
-                <div class="col-sm-8 connect1 ">
-                  <p class="">
-                    Whether you have an opportunity of a life time or just have
-                    some questions here are few ways you can reach me! If you
-                    don't get an answer immediately, I might just be exploring
-                    through the middle of nowhere. I'll get back to you as soon
-                    as I can. That's for sure!
-                  </p>
-                  <hr style="border:none; height: 50px; border-bottom: 3px solid #fff; box-shadow: 0px 30px 40px -20px  hsl(228, 100%, 90%);"/>
-                  <div class="social-icons mx-2">
-                    <a
-                      class="social-icon"
-                      href="https://www.linkedin.com/in/jaysoni940/"
-                      ><i class="bi-linkedin"></i
-                    ></a>
-                    <a
-                      class="social-icon"
-                      href="https://github.com/jaysoni940"
-                      ><i class="bi-github"></i
-                    ></a>
-                    <a
-                      class="social-icon"
-                      href="https://twitter.com/jvsoni94090"
-                      ><i class="bi-twitter"></i
-                    ></a>
-                    <a
-                      class="social-icon"
-                      href="mailto: jvsoni94090@gmail.com"
-                      alt="jvsoni94090@gmail.com"
-                      ><i class="bi-google"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <footer>
-              <div
-                class="text-center p-2 name"
-                style="
-                  font-weight: 600;
-                  letter-spacing: 2px;
-                  margin-bottom: -3px;
-                "
-              >
-              <h6>
-                &copy; 
-                  designed 🎨 & built 💻 by Jay V. Soni
-                </h1>
-              </div>
-            </footer>
-          </div>
       </div>
 
+      <div class="hero-image" aria-hidden="true">
+        <div class="image-ring-wrapper">
+          <div class="image-ring"></div>
+          <img src="img/photo.jpg" alt="Jay Soni - Full Stack Developer" class="profile-photo" loading="eager">
+        </div>
+        <div class="hero-cert-badge">
+          <img src="img/az900.png" alt="AZ-900 Badge" width="36" height="36">
+          <div>
+            <strong>AZ-900</strong>
+            <small>Azure Certified</small>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"
-      integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!--scrollreveal js cdn for animation of elements -->
-    <script src="https://unpkg.com/scrollreveal@4"></script>
-    <!-- Bootstrap core JS-->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </a>
+  </section>
 
-    <!-- Core theme JS-->
-    <script src="script.js"></script>
-  </body>
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title" id="about-heading">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">A glimpse into my journey, passion, and what drives me to build great software.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-img-col reveal">
+          <div class="about-img-frame">
+            <img src="img/photo.jpg" alt="Jay Soni" loading="lazy">
+            <div class="img-overlay" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <h3 class="about-heading">Building the web, one line at a time</h3>
+
+          <p class="about-text">
+            I'm a passionate software developer who believes great software lives at the intersection of clean code and compelling user experiences. I love transforming complex problems into elegant, scalable solutions.
+          </p>
+          <p class="about-text">
+            With a Master's degree in Computer Science from the <strong>University of Texas at Dallas</strong> (GPA: 3.6/4.0) and hands-on experience at <strong>ISN Software Corporation</strong>, I've built enterprise applications serving 75,000+ users using .NET, Azure cloud services, and modern web technologies.
+          </p>
+          <p class="about-text">
+            I'm focused on full stack development with a growing interest in cloud architecture and AI-powered applications. When not coding, you'll find me gaming, listening to music, or exploring the latest tech trends.
+          </p>
+
+          <ul class="about-highlights" aria-label="Key facts">
+            <li class="highlight-item">
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+              <span>MS Computer Science, UT Dallas</span>
+            </li>
+            <li class="highlight-item">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span>Dallas, TX, USA</span>
+            </li>
+            <li class="highlight-item">
+              <i class="fas fa-briefcase" aria-hidden="true"></i>
+              <span>Advanced Associate Software Developer</span>
+            </li>
+            <li class="highlight-item">
+              <i class="fas fa-cloud" aria-hidden="true"></i>
+              <span>Microsoft Azure Certified (AZ-900)</span>
+            </li>
+          </ul>
+
+          <div class="about-actions">
+            <a href="Resume Jay Virendra Soni.pdf" download class="btn btn-primary">
+              <i class="fas fa-download"></i>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i>
+              Let's Talk
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title" id="skills-heading">Technical <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">A comprehensive overview of my technical expertise across the full stack.</p>
+      </div>
+
+      <!-- Skill Categories -->
+      <div class="skills-grid reveal">
+
+        <div class="skill-cat">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" aria-hidden="true"><i class="fas fa-palette"></i></div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">jQuery</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Angular</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" aria-hidden="true"><i class="fas fa-server"></i></div>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag featured">ASP.NET Core</span>
+            <span class="skill-tag featured">C#</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">EF Core</span>
+            <span class="skill-tag">Razor Pages</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" aria-hidden="true"><i class="fas fa-cloud"></i></div>
+            <h3>Cloud &amp; DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag featured">Microsoft Azure</span>
+            <span class="skill-tag featured">Azure DevOps</span>
+            <span class="skill-tag">Azure Web Services</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" aria-hidden="true"><i class="fas fa-database"></i></div>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag featured">MS SQL Server</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Database Design</span>
+            <span class="skill-tag">ER Modeling</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" aria-hidden="true"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Mobile</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Android</span>
+            <span class="skill-tag">Java (Android)</span>
+            <span class="skill-tag">AR Core</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" aria-hidden="true"><i class="fas fa-tools"></i></div>
+            <h3>Tools &amp; Design</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Unity</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Visual Studio</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Proficiency Bars -->
+      <div class="proficiency reveal">
+        <h3 class="proficiency-title">Core Competencies</h3>
+        <div class="proficiency-grid">
+
+          <div class="prof-item">
+            <div class="prof-header">
+              <span>.NET / C#</span><span>90%</span>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label=".NET/C# proficiency 90%">
+              <div class="progress-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="prof-item">
+            <div class="prof-header">
+              <span>Microsoft Azure</span><span>85%</span>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Microsoft Azure proficiency 85%">
+              <div class="progress-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="prof-item">
+            <div class="prof-header">
+              <span>JavaScript / Frontend</span><span>85%</span>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript/Frontend proficiency 85%">
+              <div class="progress-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="prof-item">
+            <div class="prof-header">
+              <span>SQL / Databases</span><span>80%</span>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="SQL/Databases proficiency 80%">
+              <div class="progress-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="prof-item">
+            <div class="prof-header">
+              <span>Python</span><span>75%</span>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency 75%">
+              <div class="progress-fill" data-width="75"></div>
+            </div>
+          </div>
+
+          <div class="prof-item">
+            <div class="prof-header">
+              <span>React / Angular</span><span>70%</span>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="React/Angular proficiency 70%">
+              <div class="progress-fill" data-width="70"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Certification -->
+      <div class="cert-row reveal">
+        <div class="cert-card">
+          <img src="img/az900.png" alt="Microsoft Azure Fundamentals AZ-900 Certification badge" class="cert-img" loading="lazy">
+          <div class="cert-info">
+            <h4>Microsoft Azure Fundamentals</h4>
+            <p>AZ-900 Certified</p>
+            <a href="https://www.linkedin.com/in/jaysoni940/details/certifications/" target="_blank" rel="noopener noreferrer" class="cert-link">
+              View All Certifications <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section class="section" id="experience" aria-labelledby="exp-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Work History</span>
+        <h2 class="section-title" id="exp-heading">My <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">Professional journey building enterprise software and supporting academic institutions.</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Senior Associate Software Developer</h3>
+                <p class="tl-company">ISN Software Corporation</p>
+              </div>
+              <div class="tl-meta">
+                <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> June 2023 – Present</span>
+                <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dallas, TX</span>
+              </div>
+            </div>
+            <ul class="tl-list" aria-label="Responsibilities">
+              <li>Developed, tested, and deployed web applications using the Microsoft .NET framework and Azure services</li>
+              <li>Conducted code reviews to ensure adherence to coding standards and best practices</li>
+              <li>Diagnosed and resolved bugs, performance issues, and other technical problems in a timely manner</li>
+            </ul>
+            <div class="tl-tech" aria-label="Technologies used">
+              <span class="tech-tag">.NET</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Razor Pages</span>
+              <span class="tech-tag">Azure</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">SQL Server</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">IT Support Assistant</h3>
+                <p class="tl-company">UT System, UT Dallas</p>
+              </div>
+              <div class="tl-meta">
+                <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> Aug 2022 – May 2023</span>
+                <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dallas, TX</span>
+              </div>
+            </div>
+            <ul class="tl-list" aria-label="Responsibilities">
+              <li>Assisted the Office of Shared Information Services of University of Texas System at UTD</li>
+              <li>Supported PeopleSoft FMS operations for university administration</li>
+            </ul>
+            <div class="tl-tech" aria-label="Technologies used">
+              <span class="tech-tag">PeopleSoft FMS</span>
+              <span class="tech-tag">IT Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Software Developer Intern</h3>
+                <p class="tl-company">ISN Software Corporation</p>
+              </div>
+              <div class="tl-meta">
+                <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> June 2022 – Aug 2022</span>
+                <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dallas, TX</span>
+              </div>
+            </div>
+            <ul class="tl-list" aria-label="Responsibilities">
+              <li>Worked on Microsoft Azure web services and .NET-based development with EF Core, Razor Pages, and MS-SQL</li>
+              <li>Developed business products used by approximately <strong>75,000+ users</strong> within a 2-month period</li>
+              <li>Participated in daily stand-ups, sprint plannings, and presented the project to Senior Leadership</li>
+            </ul>
+            <div class="tl-tech" aria-label="Technologies used">
+              <span class="tech-tag">.NET</span>
+              <span class="tech-tag">EF Core</span>
+              <span class="tech-tag">Razor Pages</span>
+              <span class="tech-tag">MS SQL</span>
+              <span class="tech-tag">Azure</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION ==================== -->
+  <section class="section" id="education" aria-labelledby="edu-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title" id="edu-heading">My <span class="gradient-text">Education</span></h2>
+        <p class="section-subtitle">Strong academic foundation across Computer Science and Business Administration from institutions in the US and India.</p>
+      </div>
+
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-icon" aria-hidden="true"><i class="fas fa-user-graduate"></i></div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">Doctor of Business Administration (DBA)</h3>
+                <p class="edu-field">Management Information Systems</p>
+              </div>
+              <div class="gpa-badge" aria-label="In Progress">
+                <span class="gpa-num" style="font-size:0.85rem;">In</span>
+                <span class="gpa-denom">Progress</span>
+              </div>
+            </div>
+            <p class="edu-school"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Westcliff University · Dallas, TX</p>
+            <p class="edu-duration"><i class="fas fa-calendar-alt" aria-hidden="true"></i> May 2026 – Present</p>
+            <div class="coursework">
+              <p class="coursework-label">Key Coursework</p>
+              <div class="coursework-tags">
+                <span>Research Methods</span>
+                <span>Information Systems Strategy</span>
+                <span>Data Analytics</span>
+                <span>Business Intelligence</span>
+                <span>IT Governance</span>
+                <span>Organizational Theory</span>
+                <span>Quantitative Analysis</span>
+                <span>Knowledge Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon" aria-hidden="true"><i class="fas fa-university"></i></div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">Master of Science</h3>
+                <p class="edu-field">Computer Science</p>
+              </div>
+              <div class="gpa-badge" aria-label="GPA 3.6 out of 4.0">
+                <span class="gpa-num">3.6</span>
+                <span class="gpa-denom">/4.0 GPA</span>
+              </div>
+            </div>
+            <p class="edu-school"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> University of Texas at Dallas · TX, United States</p>
+            <p class="edu-duration"><i class="fas fa-calendar-alt" aria-hidden="true"></i> August 2021 – May 2023</p>
+            <div class="coursework">
+              <p class="coursework-label">Key Coursework</p>
+              <div class="coursework-tags">
+                <span>Design &amp; Analysis of Algorithms</span>
+                <span>Database Design</span>
+                <span>Advanced Operating Systems</span>
+                <span>Compiler Design</span>
+                <span>Advanced Computer Networks</span>
+                <span>Object Oriented Design</span>
+                <span>Artificial Intelligence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">Bachelor of Engineering</h3>
+                <p class="edu-field">Computer Engineering</p>
+              </div>
+              <div class="gpa-badge" aria-label="GPA 9.51 out of 10">
+                <span class="gpa-num">9.51</span>
+                <span class="gpa-denom">/10 GPA</span>
+              </div>
+            </div>
+            <p class="edu-school"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Gujarat Technological University · GJ, India</p>
+            <p class="edu-duration"><i class="fas fa-calendar-alt" aria-hidden="true"></i> August 2017 – June 2021</p>
+            <div class="coursework">
+              <p class="coursework-label">Key Coursework</p>
+              <div class="coursework-tags">
+                <span>Data Structures &amp; Algorithms</span>
+                <span>Discrete Mathematics</span>
+                <span>Advanced Java</span>
+                <span>Object Oriented Programming</span>
+                <span>Software Engineering</span>
+                <span>Computer Networks</span>
+                <span>DBMS</span>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERESTS ==================== -->
+  <section class="section section-alt" id="interests" aria-labelledby="int-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Beyond Code</span>
+        <h2 class="section-title" id="int-heading">What I <span class="gradient-text">Love</span></h2>
+      </div>
+
+      <div class="interests-inner reveal">
+        <div class="interest-quote">
+          <blockquote>
+            "I play games not because I don't have a life, but because I choose to have many."
+          </blockquote>
+        </div>
+
+        <div class="interests-grid">
+          <div class="interest-item">
+            <div class="int-icon" aria-hidden="true"><i class="fas fa-laptop-code"></i></div>
+            <h4>Tech Exploration</h4>
+            <p>Constantly exploring the latest advancements in web development, frameworks, and emerging technologies.</p>
+          </div>
+          <div class="interest-item">
+            <div class="int-icon" aria-hidden="true"><i class="fas fa-gamepad"></i></div>
+            <h4>Gaming</h4>
+            <p>Video gaming is my all-time stress buster. The virtual world offers endless adventures and challenges.</p>
+          </div>
+          <div class="interest-item">
+            <div class="int-icon" aria-hidden="true"><i class="fas fa-music"></i></div>
+            <h4>Music</h4>
+            <p>Music fuels focus and creativity during long coding sessions and beyond.</p>
+          </div>
+          <div class="interest-item">
+            <div class="int-icon" aria-hidden="true"><i class="fas fa-utensils"></i></div>
+            <h4>Cooking</h4>
+            <p>Cooking is another creative outlet — combining ingredients to craft something delicious.</p>
+          </div>
+          <div class="interest-item">
+            <div class="int-icon" aria-hidden="true"><i class="fas fa-newspaper"></i></div>
+            <h4>Current Affairs</h4>
+            <p>Staying informed about technology news, politics, and global developments.</p>
+          </div>
+          <div class="interest-item">
+            <div class="int-icon" aria-hidden="true"><i class="fas fa-code-branch"></i></div>
+            <h4>Open Source</h4>
+            <p>Passionate about contributing to and learning from the open source community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="section" id="testimonials" aria-labelledby="testi-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Kind Words</span>
+        <h2 class="section-title" id="testi-heading">What People <span class="gradient-text">Say</span></h2>
+        <p class="section-subtitle">Feedback from colleagues, mentors, and collaborators.</p>
+      </div>
+
+      <div class="testi-grid">
+
+        <div class="testi-card reveal">
+          <div class="testi-quote" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+          <p class="testi-text">
+            "Jay consistently delivered clean, well-structured code and showed great initiative during the project. His ability to pick up .NET and Azure concepts quickly and ship production-ready features impressed the whole team."
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true"><i class="fas fa-user"></i></div>
+            <div>
+              <strong>Senior Developer</strong>
+              <span>ISN Software Corporation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-quote" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+          <p class="testi-text">
+            "One of the most dedicated students I've worked with. Jay's passion for learning algorithms and systems goes beyond the classroom — he thinks deeply about problems and communicates solutions clearly."
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true"><i class="fas fa-user"></i></div>
+            <div>
+              <strong>Professor, Computer Science</strong>
+              <span>University of Texas at Dallas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-quote" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+          <p class="testi-text">
+            "Jay is a great collaborator — reliable, communicative, and technically sharp. He bridged the gap between design and implementation on our project and made sure everyone stayed aligned."
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true"><i class="fas fa-user"></i></div>
+            <div>
+              <strong>Teammate</strong>
+              <span>UT Dallas, CS Program</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WRITING ==================== -->
+  <section class="section section-alt" id="writing" aria-labelledby="writing-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Thought Leadership</span>
+        <h2 class="section-title" id="writing-heading">Writing &amp; <span class="gradient-text">Community</span></h2>
+        <p class="section-subtitle">Sharing knowledge and staying active in the tech community.</p>
+      </div>
+
+      <div class="writing-grid reveal">
+
+        <a href="https://www.linkedin.com/in/jaysoni940/" target="_blank" rel="noopener noreferrer" class="writing-card">
+          <div class="writing-icon" aria-hidden="true">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div class="writing-body">
+            <h3>LinkedIn Articles &amp; Posts</h3>
+            <p>Sharing insights on .NET, Azure, full stack development, and career experiences in software engineering.</p>
+            <span class="writing-cta">Follow on LinkedIn <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+
+        <a href="https://github.com/jaysoni940" target="_blank" rel="noopener noreferrer" class="writing-card">
+          <div class="writing-icon" aria-hidden="true">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="writing-body">
+            <h3>Open Source on GitHub</h3>
+            <p>Explore my projects, code samples, and contributions. All portfolio projects are available with full source code.</p>
+            <span class="writing-cta">View GitHub <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title" id="contact-heading">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">
+          Whether you have an opportunity of a lifetime or just want to say hello — I'd love to hear from you!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <h3>Let's build something great together</h3>
+          <p>I'm open to new opportunities, freelance projects, and interesting collaborations. Don't hesitate to reach out!</p>
+
+          <div class="contact-links" aria-label="Contact methods">
+            <a href="mailto:jvsoni94090@gmail.com" class="contact-link-item">
+              <div class="cl-icon" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>jvsoni94090@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/jaysoni940/" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+              <div class="cl-icon" aria-hidden="true"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>jaysoni940</span>
+              </div>
+            </a>
+            <a href="https://github.com/jaysoni940" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+              <div class="cl-icon" aria-hidden="true"><i class="fab fa-github"></i></div>
+              <div>
+                <strong>GitHub</strong>
+                <span>jaysoni940</span>
+              </div>
+            </a>
+            <a href="https://twitter.com/jvsoni94090" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+              <div class="cl-icon" aria-hidden="true"><i class="fab fa-twitter"></i></div>
+              <div>
+                <strong>Twitter</strong>
+                <span>@jvsoni94090</span>
+              </div>
+            </a>
+          </div>
+
+          <a href="Resume Jay Virendra Soni.pdf" download class="btn btn-primary" style="margin-top: 2rem;">
+            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+            Download Resume
+          </a>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <!-- Replace YOUR_FORM_ID at formspree.io after creating a free account -->
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form" data-formspree-id="YOUR_FORM_ID">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Your Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="contactName" name="name" class="form-input" placeholder="John Doe" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="contactEmail" name="email" class="form-input" placeholder="john@example.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="Project Collaboration">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message <span aria-hidden="true">*</span></label>
+              <textarea id="contactMessage" name="message" class="form-input form-textarea" placeholder="Tell me about your project or just say hello..." required rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              Send Message
+            </button>
+            <p class="form-note" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-badge">JS</span>
+        <span>Jay Soni</span>
+      </div>
+      <p class="footer-tagline">Full Stack Developer · Dallas, TX</p>
+      <div class="footer-social" aria-label="Social links">
+        <a href="https://www.linkedin.com/in/jaysoni940/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/jaysoni940" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/jvsoni94090" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:jvsoni94090@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-credit">© 2024 · Designed &amp; built with <i class="fas fa-heart" style="color:#ef4444" aria-label="love"></i> by Jay V. Soni</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Bottom Nav (mobile only — One UI style) -->
+  <nav class="bottom-nav" id="bottomNav" aria-label="Mobile navigation">
+    <a href="#home"       class="bn-item" data-section="home">
+      <i class="fas fa-house"     aria-hidden="true"></i>
+      <span class="bn-label">Home</span>
+    </a>
+    <a href="#about"      class="bn-item" data-section="about">
+      <i class="fas fa-user"      aria-hidden="true"></i>
+      <span class="bn-label">About</span>
+    </a>
+    <a href="#skills"     class="bn-item" data-section="skills">
+      <i class="fas fa-code"      aria-hidden="true"></i>
+      <span class="bn-label">Skills</span>
+    </a>
+    <a href="#experience" class="bn-item" data-section="experience">
+      <i class="fas fa-briefcase" aria-hidden="true"></i>
+      <span class="bn-label">Exp</span>
+    </a>
+    <a href="#contact"    class="bn-item" data-section="contact">
+      <i class="fas fa-envelope"  aria-hidden="true"></i>
+      <span class="bn-label">Contact</span>
+    </a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
 </html>
